@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
 
         int num = Integer.parseInt(bf.readLine());
         int[] arr = new int[num];
@@ -16,7 +17,9 @@ public class Main {
 
         Arrays.sort(arr);
         for (int i : arr) {
-            System.out.println(i);
+            sb.append(i).append("\n");
         }
+
+        System.out.println(sb);
     }
 }
