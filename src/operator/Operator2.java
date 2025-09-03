@@ -15,6 +15,7 @@ public class Operator2 {
         System.out.println(result2);
 
         //문자열과 숫자 더하기1
+        //사실은 자바가 숫자를 문자로 바꿔버리는것
         String result3 = "a + b = " + 10;
         System.out.println(result3);
 
