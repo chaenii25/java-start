@@ -1,6 +1,6 @@
 package cond.ex;
 
-public class MoveRateEx {
+public class MovieRateEx {
 
     public static void main(String[] args) {
         double rating = 7.1;

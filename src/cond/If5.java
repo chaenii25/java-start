@@ -17,6 +17,8 @@ public class If5 {
             System.out.println("어린이 1000원 할인");
         }
 
+        //만약에 else-if문이었다면 중복할인은 안되었을 것
+
         System.out.println("총 할인 금액: " + discount + "원");
     }
 }
