@@ -14,11 +14,12 @@ public class Main {
             String[] input = br.readLine().split(" ");
             int age = Integer.parseInt(input[0]);
             String name = input[1];
+
             people.add(new Person(age, name));
         }
 
         Collections.sort(people, (a, b) -> {
-         return Integer.compare(a.age, b.age);
+           return Integer.compare(a.age, b.age);
         });
 
         for (Person person : people) {
