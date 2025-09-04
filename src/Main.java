@@ -5,27 +5,34 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        BufferedReader bf = new  BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int num =  Integer.parseInt(bf.readLine());
-        Set<String> set = new HashSet<>();
+        int num = Integer.parseInt(br.readLine());
+        List<Person> people = new ArrayList<>();
 
         for (int i = 0; i < num; i++) {
-            set.add(bf.readLine());
+            String[] input = br.readLine().split(" ");
+            int age = Integer.parseInt(input[0]);
+            String name = input[1];
+            people.add(new Person(age, name));
         }
 
-        List<String> list = new ArrayList<>(set);
-
-        Collections.sort(list, (a, b) ->{
-            if(a.length() != b.length()){
-                return a.length() - b.length();
-            } else {
-                return a.compareTo(b);
-            }
+        Collections.sort(people, (a, b) -> {
+         return Integer.compare(a.age, b.age);
         });
 
-        for (String s : list) {
-            System.out.println(s);
+        for (Person person : people) {
+            System.out.println(person.age + " " + person.name);
         }
+    }
+}
+
+class Person {
+    int age;
+    String name;
+
+    Person(int age, String name) {
+        this.age = age;
+        this.name = name;
     }
 }
