@@ -18,5 +18,7 @@ public class Scanner1 {
         System.out.print("실수를 입력하세요:");
         double doubleValue = scanner.nextDouble();
         System.out.println("입력한 실수: " + doubleValue);
+
+        //잘못된 값 넣으면 예외처리되면서 종료
     }
 }
