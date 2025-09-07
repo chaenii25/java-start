@@ -11,20 +11,21 @@ public class Main {
         List<Person> people = new ArrayList<>();
 
         for (int i = 0; i < num; i++) {
-            String[] input = br.readLine().split(" ");
-            int age = Integer.parseInt(input[0]);
-            String name = input[1];
+            String[] arr = br.readLine().split(" ");
+            int age = Integer.parseInt(arr[0]);
+            String name = arr[1];
 
             people.add(new Person(age, name));
         }
 
         Collections.sort(people, (a, b) -> {
-           return Integer.compare(a.age, b.age);
+            return Integer.compare(a.age, b.age);
         });
 
         for (Person person : people) {
             System.out.println(person.age + " " + person.name);
         }
+       
     }
 }
 
