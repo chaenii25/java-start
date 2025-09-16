@@ -14,8 +14,15 @@ public class Array1Ref2 {
         students[4] = 50;
 
         //변수 값 사용
-        for (int i = 0; i < students.length; i++) {
+        for (int i = 0; i < students.length; i++) { //배열의 길이를 제곻하는 특별한 기능
             System.out.println("학생" + (i + 1) + " 점수: " + students[i]);
+        }
+
+        System.out.println("구분선==============");
+        System.out.println("i + 1 먼저 연산안하면 생기는 일");
+        for (int i = 0; i < students.length; i++) { //배열의 길이를 제곻하는 특별한 기능
+            // i + 1 먼저 연산안하면 생기는 일
+            System.out.println("학생" + i + 1 + " 점수: " + students[i]);
         }
     }
 }

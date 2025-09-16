@@ -11,7 +11,7 @@ public class EnhancedFor1 {
             System.out.println(number);
         }
 
-        //향상된 for문, for-each문
+        //향상된 for문, for-each문 //iter 단축키 암기
         for (int number : numbers) {
             System.out.println(number);
         }

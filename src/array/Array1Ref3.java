@@ -4,6 +4,7 @@ public class Array1Ref3 {
 
     public static void main(String[] args) {
         int[] students; //배열 변수 선언
+        // 밑의 경우엔 new int[] 빠지면 컴파일에러
         students = new int[]{90, 80, 70, 60, 50}; //배열 생성과 초기화
 
         //변수 값 사용
